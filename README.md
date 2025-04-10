@@ -17,13 +17,7 @@
 <p align="center"><img src="https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screen%20Shot%202020-05-14%20at%208.49.06%20PM.png" width="700" height="400"></p>
 
 
-## :warning: TechStack/framework used
 
-- [OpenCV](https://opencv.org/)
-- [Caffe-based face detector](https://caffe.berkeleyvision.org/)
-- [Keras](https://keras.io/)
-- [TensorFlow](https://www.tensorflow.org/)
-- [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
 ## :star: Features
 This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to the outbreak of Covid-19. This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
@@ -36,10 +30,6 @@ This dataset consists of __4095 images__ belonging to two classes:
 
 The images used were real images of faces wearing masks. The images were collected from the following sources:
 
-* __Bing Search API__ ([See Python script](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py))
-* __Kaggle datasets__ 
-* __RMFD dataset__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
-
 ## :key: Prerequisites
 
 All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/requirements.txt)
@@ -47,7 +37,7 @@ All the dependencies and required libraries are included in the file <code>requi
 ## 🚀&nbsp; Installation
 1. Clone the repo
 ```
-$ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
+$ git clone https://github.com/vipulsharma05/Face-Mask-Detection.git
 ```
 
 2. Change your directory to the cloned repo 
@@ -57,32 +47,32 @@ $ cd Face-Mask-Detection
 
 3. Create a Python virtual environment named 'test' and activate it
 ```
-$ virtualenv test
+python -m env test
 ```
 ```
-$ source test/bin/activate
+test/Scripts/activate
 ```
 
 4. Now, run the following command in your Terminal/Command Prompt to install the libraries required
 ```
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## :bulb: Working
 
 1. Open terminal. Go into the cloned project directory and type the following command:
 ```
-$ python3 train_mask_detector.py --dataset dataset
+python train_mask_detector.py --dataset dataset
 ```
 
 2. To detect face masks in an image type the following command: 
 ```
-$ python3 detect_mask_image.py --image images/pic1.jpeg
+python detect_mask_image.py --image images/pic1.jpeg
 ```
 
 3. To detect face masks in real-time video streams type the following command:
 ```
-$ python3 detect_mask_video.py 
+python detect_mask_video.py 
 ```
 ## :key: Results
 
